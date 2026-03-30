@@ -62,7 +62,7 @@ export default function Hero() {
       <div className={styles.content}>
         {/* Left: big typography */}
         <div className={styles.left}>
-          <p className={styles.preHeading}>Backend Developer</p>
+          <p className={styles.preHeading}>Mern Developer</p>
 
           <h1 className={styles.heading}>
             <span className={styles.headingLine1}>Crafting</span>

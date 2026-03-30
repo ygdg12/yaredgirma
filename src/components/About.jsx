@@ -71,10 +71,10 @@ export default function About() {
 
           <div className={`${styles.body} reveal reveal-delay-2`} ref={el => r(el, 7)}>
             <p>
-              I'm Yared a backend-focused developer based in Addis Ababa. I build clean, scalable APIs and full-stack systems that actually work in the real world.
+            I'm Yared, a backend-focused MERN developer based in Addis Ababa. I build clean, scalable APIs and full-stack web applications that work in real-world environments. My stack centers on Node.js, Express, and MongoDB, with React on the frontend when needed.
             </p>
             <p>
-              My stack is centered around <strong>Node.js</strong>, <strong>Express</strong>, and <strong>MongoDB</strong>, with React on the frontend when needed. I love the process of turning messy requirements into elegant, maintainable code.
+              I’m experienced in creating RESTful APIs, responsive interfaces, and scalable solutions, and I enjoy turning messy requirements into clean, maintainable, production-ready code.
             </p>
            
           </div>
