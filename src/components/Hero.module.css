@@ -275,6 +275,24 @@
   border-radius: 12px;
   overflow: hidden;
   position: relative;
+  background:
+    radial-gradient(120% 90% at 65% 20%, rgba(255, 107, 53, 0.40) 0%, rgba(255, 107, 53, 0.08) 35%, transparent 70%),
+    radial-gradient(90% 80% at 20% 65%, rgba(99, 102, 241, 0.35) 0%, rgba(99, 102, 241, 0.06) 40%, transparent 75%),
+    linear-gradient(135deg, rgba(245, 240, 232, 0.08) 0%, rgba(8, 8, 8, 0) 60%),
+    rgba(10, 10, 10, 0.9);
+}
+
+.photoInner::before {
+  content: '';
+  position: absolute;
+  inset: -20%;
+  background:
+    radial-gradient(circle at 60% 25%, rgba(255, 107, 53, 0.35) 0%, transparent 55%),
+    radial-gradient(circle at 25% 70%, rgba(99, 102, 241, 0.28) 0%, transparent 60%);
+  filter: blur(22px);
+  opacity: 0.9;
+  transform: translateZ(0);
+  z-index: 0;
 }
 
 .photoInner::after {
@@ -282,6 +300,7 @@
   position: absolute;
   inset: 0;
   background: linear-gradient(to bottom, transparent 60%, rgba(8,8,8,0.4) 100%);
+  z-index: 2;
 }
 
 .photo {
@@ -290,6 +309,8 @@
   object-fit: cover;
   object-position: center top;
   display: block;
+  position: relative;
+  z-index: 1;
 }
 
 .floatTag1,

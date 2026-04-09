@@ -38,6 +38,24 @@
   border-radius: 12px;
   overflow: hidden;
   aspect-ratio: 4/5;
+  background:
+    radial-gradient(120% 90% at 70% 20%, rgba(255, 107, 53, 0.38) 0%, rgba(255, 107, 53, 0.08) 35%, transparent 70%),
+    radial-gradient(90% 80% at 15% 70%, rgba(99, 102, 241, 0.32) 0%, rgba(99, 102, 241, 0.06) 45%, transparent 78%),
+    linear-gradient(135deg, rgba(245, 240, 232, 0.08) 0%, rgba(8, 8, 8, 0) 60%),
+    rgba(10, 10, 10, 0.9);
+}
+
+.photoWrap::before {
+  content: '';
+  position: absolute;
+  inset: -18%;
+  background:
+    radial-gradient(circle at 60% 25%, rgba(255, 107, 53, 0.30) 0%, transparent 55%),
+    radial-gradient(circle at 25% 70%, rgba(99, 102, 241, 0.24) 0%, transparent 60%);
+  filter: blur(20px);
+  opacity: 0.9;
+  transform: translateZ(0);
+  z-index: 0;
 }
 
 .photo {
@@ -48,6 +66,8 @@
   display: block;
   filter: grayscale(20%);
   transition: filter 0.4s;
+  position: relative;
+  z-index: 1;
 }
 
 .photoWrap:hover .photo {
@@ -58,6 +78,7 @@
   position: absolute;
   inset: 0;
   background: linear-gradient(to bottom, transparent 50%, rgba(8,8,8,0.7) 100%);
+  z-index: 2;
 }
 
 .photoBadge {
@@ -68,6 +89,7 @@
   color: var(--black);
   padding: 10px 16px;
   border-radius: 8px;
+  z-index: 3;
 }
 
 .photoBadgeNum {
